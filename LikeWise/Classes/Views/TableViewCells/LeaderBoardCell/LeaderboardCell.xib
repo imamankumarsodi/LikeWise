@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeaderboardCell" rowHeight="164" id="H27-B0-lZj" customClass="LeaderboardCell" customModule="LikeWise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H27-B0-lZj" id="ee2-V9-4N8">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-TJ-pY1">
+                        <rect key="frame" x="15" y="5" width="303" height="145"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imga" translatesAutoresizingMaskIntoConstraints="NO" id="ZGF-bq-Teg">
+                                <rect key="frame" x="15" y="15" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0Bq-VU-usS"/>
+                                    <constraint firstAttribute="width" constant="70" id="5T0-Xv-qF0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-jA-ss7">
+                                <rect key="frame" x="90" y="15" width="58.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb_home" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-2x-tCG">
+                                <rect key="frame" x="158.5" y="16.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="gFe-DV-u4N"/>
+                                    <constraint firstAttribute="height" constant="22" id="knd-0z-VJH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43 games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rA-fR-pcZ">
+                                <rect key="frame" x="95" y="66" width="60" height="19"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9130" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGk-2y-g1U">
+                                <rect key="frame" x="95" y="40.5" width="30.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDf-bI-aGJ">
+                                <rect key="frame" x="266" y="40" width="21" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOv-BP-GwS" customClass="DYPieChartView">
+                                <rect key="frame" x="27.5" y="60" width="45" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="kWd-PT-tj4"/>
+                                    <constraint firstAttribute="height" constant="45" id="uRq-k6-Gki"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHd-Pi-qeN">
+                                <rect key="frame" x="29" y="72.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZGF-bq-Teg" firstAttribute="top" secondItem="Wl5-TJ-pY1" secondAttribute="top" constant="15" id="0JY-Ti-3Iq"/>
+                            <constraint firstItem="XGk-2y-g1U" firstAttribute="leading" secondItem="ZGF-bq-Teg" secondAttribute="trailing" constant="10" id="92l-0B-bAJ"/>
+                            <constraint firstItem="YMe-jA-ss7" firstAttribute="top" secondItem="ZGF-bq-Teg" secondAttribute="top" id="BrM-07-Xus"/>
+                            <constraint firstItem="XGk-2y-g1U" firstAttribute="centerY" secondItem="ZGF-bq-Teg" secondAttribute="centerY" id="I0O-Hw-045"/>
+                            <constraint firstItem="EHd-Pi-qeN" firstAttribute="centerY" secondItem="rOv-BP-GwS" secondAttribute="centerY" id="JFA-bh-NjZ"/>
+                            <constraint firstItem="YMe-jA-ss7" firstAttribute="leading" secondItem="ZGF-bq-Teg" secondAttribute="trailing" constant="5" id="SKT-i1-sym"/>
+                            <constraint firstItem="9rA-fR-pcZ" firstAttribute="leading" secondItem="ZGF-bq-Teg" secondAttribute="trailing" constant="10" id="ZSd-D2-8Ph"/>
+                            <constraint firstItem="rOv-BP-GwS" firstAttribute="centerX" secondItem="ZGF-bq-Teg" secondAttribute="centerX" id="Zey-K0-3mN"/>
+                            <constraint firstItem="V3y-2x-tCG" firstAttribute="centerY" secondItem="YMe-jA-ss7" secondAttribute="centerY" constant="3" id="bTr-tr-7J1"/>
+                            <constraint firstItem="EHd-Pi-qeN" firstAttribute="centerX" secondItem="rOv-BP-GwS" secondAttribute="centerX" id="enl-RZ-Jjt"/>
+                            <constraint firstItem="V3y-2x-tCG" firstAttribute="leading" secondItem="YMe-jA-ss7" secondAttribute="trailing" constant="10" id="r15-Sh-ckS"/>
+                            <constraint firstItem="ZGF-bq-Teg" firstAttribute="leading" secondItem="Wl5-TJ-pY1" secondAttribute="leading" constant="15" id="r4X-Cd-NT5"/>
+                            <constraint firstAttribute="trailing" secondItem="FDf-bI-aGJ" secondAttribute="trailing" constant="16" id="t2j-Lj-ijZ"/>
+                            <constraint firstItem="rOv-BP-GwS" firstAttribute="top" secondItem="ZGF-bq-Teg" secondAttribute="bottom" constant="-25" id="xAP-DM-xaa"/>
+                            <constraint firstItem="FDf-bI-aGJ" firstAttribute="centerY" secondItem="XGk-2y-g1U" secondAttribute="centerY" id="ybO-JF-kdB"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V3y-2x-tCG" secondAttribute="trailing" constant="10" id="yrF-m8-Lkj"/>
+                            <constraint firstItem="9rA-fR-pcZ" firstAttribute="bottom" secondItem="ZGF-bq-Teg" secondAttribute="bottom" id="zLH-uw-Z3Q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Wl5-TJ-pY1" secondAttribute="bottom" constant="5" id="Ams-F2-LZr"/>
+                    <constraint firstItem="Wl5-TJ-pY1" firstAttribute="leading" secondItem="ee2-V9-4N8" secondAttribute="leading" constant="15" id="BNT-Y5-TgH"/>
+                    <constraint firstAttribute="trailing" secondItem="Wl5-TJ-pY1" secondAttribute="trailing" constant="15" id="CVn-ez-Hxw"/>
+                    <constraint firstItem="Wl5-TJ-pY1" firstAttribute="top" secondItem="ee2-V9-4N8" secondAttribute="top" constant="5" id="tjc-cH-emL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Oup-m4-Byc"/>
+            <connections>
+                <outlet property="imgFB" destination="V3y-2x-tCG" id="tpU-dj-Hc0"/>
+                <outlet property="imgProfile" destination="ZGF-bq-Teg" id="4f3-YK-aMG"/>
+                <outlet property="lblDetail" destination="XGk-2y-g1U" id="Zsc-UF-Cnc"/>
+                <outlet property="lblGameCount" destination="9rA-fR-pcZ" id="aac-qX-UfS"/>
+                <outlet property="lblName" destination="YMe-jA-ss7" id="gFs-YY-jC8"/>
+                <outlet property="lblProgPer" destination="EHd-Pi-qeN" id="42d-nf-jwu"/>
+                <outlet property="lblTimings" destination="FDf-bI-aGJ" id="rmV-Yx-UKy"/>
+                <outlet property="pieChart" destination="rOv-BP-GwS" id="x4i-p4-Gn4"/>
+                <outlet property="viewBG" destination="Wl5-TJ-pY1" id="RUG-2y-lW1"/>
+            </connections>
+            <point key="canvasLocation" x="673.1884057971015" y="128.23660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fb_home" width="22" height="22"/>
+        <image name="imga" width="76" height="70"/>
+    </resources>
+</document>

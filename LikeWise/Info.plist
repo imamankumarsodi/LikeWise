@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App Server Url</key>
+	<string>$(LIKEWISE_BASE_SERVICE_URL)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>GADApplicationIdentifier</key>
+    <string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Facebook_ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb625142868330049</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>REVERSED_CLIENT_ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.112914264819-qep6cml47qsj88l6ppnqjppk1rmmd47f</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>625142868330049</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>LikeWise</key>
+	<string>Likewise</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Likewise requiered media usage.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Likewise needs add photos to your photo library to upload pictures for Profile.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Likewise needs add photos to your photo library to upload pictures for Profile.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Likewise requires access to the photo library to upload pictures for Profile.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>segoeui_0.ttf</string>
+		<string>segoeuib_0.ttf</string>
+		<string>segoeuii_0.ttf</string>
+		<string>SEGOEUIL_0.ttf</string>
+		<string>segoeuisl.ttf</string>
+		<string>segoeuiz_0.ttf</string>
+		<string>seguibl.ttf</string>
+		<string>seguibli.ttf</string>
+		<string>seguili.ttf</string>
+		<string>seguisb_0.ttf</string>
+		<string>seguisbi.ttf</string>
+		<string>seguisli.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Auth</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

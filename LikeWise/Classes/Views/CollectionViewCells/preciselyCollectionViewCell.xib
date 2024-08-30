@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui_0.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="preciselyCollectionViewCell" id="dpP-3A-1fe" customClass="preciselyCollectionViewCell" customModule="LikeWise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="34"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-QP-iT8">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xk-I6-AcV">
+                                <rect key="frame" x="4" y="4" width="171" height="26"/>
+                                <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5xk-I6-AcV" firstAttribute="leading" secondItem="Ifn-QP-iT8" secondAttribute="leading" constant="4" id="6bH-0m-BAE"/>
+                            <constraint firstAttribute="trailing" secondItem="5xk-I6-AcV" secondAttribute="trailing" constant="4" id="RDS-mq-DT0"/>
+                            <constraint firstItem="5xk-I6-AcV" firstAttribute="top" secondItem="Ifn-QP-iT8" secondAttribute="top" constant="4" id="Wsv-dH-raG"/>
+                            <constraint firstAttribute="bottom" secondItem="5xk-I6-AcV" secondAttribute="bottom" constant="4" id="ZRr-96-73I"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ifn-QP-iT8" firstAttribute="leading" secondItem="dpP-3A-1fe" secondAttribute="leading" id="BGh-iD-sP1"/>
+                <constraint firstItem="Ifn-QP-iT8" firstAttribute="top" secondItem="dpP-3A-1fe" secondAttribute="top" id="Eo5-E0-xap"/>
+                <constraint firstAttribute="trailing" secondItem="Ifn-QP-iT8" secondAttribute="trailing" id="ZFR-Yz-b78"/>
+                <constraint firstAttribute="bottom" secondItem="Ifn-QP-iT8" secondAttribute="bottom" id="uWY-3D-i9v"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="Ifn-QP-iT8" id="0Yj-3v-CeG"/>
+                <outlet property="infoLbl" destination="5xk-I6-AcV" id="bpz-fr-Whn"/>
+            </connections>
+            <point key="canvasLocation" x="618" y="90"/>
+        </collectionViewCell>
+    </objects>
+</document>

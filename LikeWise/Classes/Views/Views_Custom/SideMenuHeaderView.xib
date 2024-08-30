@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="seguisb_0.ttf">
+            <string>SegoeUI-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="SideMenuHeaderView" customModule="LikeWise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoN-5W-FhC">
+                    <rect key="frame" x="0.0" y="-50" width="414" height="160"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="DUH-xj-ytI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.3921568627" green="0.2156862745" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DUH-xj-ytI" secondAttribute="trailing" id="8mT-jg-AyZ"/>
+                        <constraint firstItem="DUH-xj-ytI" firstAttribute="top" secondItem="uoN-5W-FhC" secondAttribute="top" id="IIv-w5-hVb"/>
+                        <constraint firstAttribute="height" constant="160" id="TgB-kW-kqK"/>
+                        <constraint firstItem="DUH-xj-ytI" firstAttribute="leading" secondItem="uoN-5W-FhC" secondAttribute="leading" id="pAk-Qe-dhI"/>
+                        <constraint firstAttribute="bottom" secondItem="DUH-xj-ytI" secondAttribute="bottom" id="qHR-vl-ihc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0he-Wn-pct">
+                    <rect key="frame" x="115" y="115" width="38.5" height="21.5"/>
+                    <fontDescription key="fontDescription" name="SegoeUI-SemiBold" family="Segoe UI" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_pic" translatesAutoresizingMaskIntoConstraints="NO" id="lGR-PL-vwN">
+                    <rect key="frame" x="20" y="70" width="85" height="85"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0he-Wn-pct" firstAttribute="leading" secondItem="lGR-PL-vwN" secondAttribute="trailing" constant="10" id="BC9-t9-2tD"/>
+                <constraint firstAttribute="trailing" secondItem="uoN-5W-FhC" secondAttribute="trailing" id="Bfw-hW-kz8"/>
+                <constraint firstItem="uoN-5W-FhC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-50" id="D6W-KF-U3J"/>
+                <constraint firstItem="uoN-5W-FhC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NWw-PE-WEm"/>
+                <constraint firstItem="0he-Wn-pct" firstAttribute="top" secondItem="uoN-5W-FhC" secondAttribute="bottom" constant="5" id="eA4-KE-SeM"/>
+                <constraint firstItem="lGR-PL-vwN" firstAttribute="top" secondItem="uoN-5W-FhC" secondAttribute="bottom" constant="-40" id="ni6-UZ-UZI"/>
+                <constraint firstItem="uoN-5W-FhC" firstAttribute="leading" secondItem="lGR-PL-vwN" secondAttribute="trailing" constant="-105" id="pPj-YT-bit"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgProfile" destination="lGR-PL-vwN" id="a7x-S2-21t"/>
+                <outlet property="lblName" destination="0he-Wn-pct" id="ibi-lr-I6d"/>
+                <outlet property="viewBG" destination="uoN-5W-FhC" id="gYD-P5-4qo"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-120.53571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="287.5" height="123"/>
+        <image name="user_pic" width="85" height="85"/>
+    </resources>
+</document>

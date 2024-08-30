@@ -1,0 +1,6 @@
+framework module Pods_LikeWise {
+  umbrella header "Pods-LikeWise-umbrella.h"
+
+  export *
+  module * { export * }
+}

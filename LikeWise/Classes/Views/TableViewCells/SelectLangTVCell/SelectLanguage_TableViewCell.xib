@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="SelectLanguage_TableViewCell" customModule="LikeWise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="india" translatesAutoresizingMaskIntoConstraints="NO" id="bOc-6d-VUi">
+                        <rect key="frame" x="40" y="18" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="F4o-Jq-hlI"/>
+                            <constraint firstAttribute="width" constant="40" id="aYh-QI-Fm3"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpe-PW-FnR">
+                        <rect key="frame" x="280" y="0.0" width="40" height="76"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="xrq-Zo-Kxw"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU8-Kx-ET7">
+                        <rect key="frame" x="30" y="0.0" width="250" height="76"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rpe-PW-FnR" secondAttribute="bottom" id="DgF-5z-Rhr"/>
+                    <constraint firstItem="IU8-Kx-ET7" firstAttribute="top" secondItem="rpe-PW-FnR" secondAttribute="top" id="OAB-6I-FtI"/>
+                    <constraint firstAttribute="trailing" secondItem="rpe-PW-FnR" secondAttribute="trailing" id="PLM-SB-MC4"/>
+                    <constraint firstItem="rpe-PW-FnR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RY2-gn-kVb"/>
+                    <constraint firstItem="IU8-Kx-ET7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="bb9-dk-jJH"/>
+                    <constraint firstItem="bOc-6d-VUi" firstAttribute="leading" secondItem="IU8-Kx-ET7" secondAttribute="leading" constant="10" id="dWN-QQ-BaF"/>
+                    <constraint firstItem="rpe-PW-FnR" firstAttribute="leading" secondItem="IU8-Kx-ET7" secondAttribute="trailing" id="olO-HX-QdX"/>
+                    <constraint firstItem="IU8-Kx-ET7" firstAttribute="bottom" secondItem="rpe-PW-FnR" secondAttribute="bottom" id="tEk-GM-kua"/>
+                    <constraint firstItem="bOc-6d-VUi" firstAttribute="centerY" secondItem="IU8-Kx-ET7" secondAttribute="centerY" id="uCE-8M-7BS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnLanguageRef" destination="rpe-PW-FnR" id="bdc-M7-cDm"/>
+                <outlet property="btnSelectRef" destination="IU8-Kx-ET7" id="KMe-D7-FV1"/>
+                <outlet property="lngImg" destination="bOc-6d-VUi" id="2SU-hw-d7b"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="india" width="16" height="16"/>
+    </resources>
+</document>

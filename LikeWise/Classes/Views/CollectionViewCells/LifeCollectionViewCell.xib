@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="LifeCollectionViewCell" id="gTV-IL-0wX" customClass="LifeCollectionViewCell" customModule="LikeWise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSR-KE-GUW">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="105"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7H9-q8-Jzc">
+                                <rect key="frame" x="176" y="39.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7H9-q8-Jzc" secondAttribute="trailing" id="khg-df-X4A"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qSR-KE-GUW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Br-ik-FdB"/>
+                <constraint firstAttribute="bottom" secondItem="qSR-KE-GUW" secondAttribute="bottom" id="Yas-S3-Ru6"/>
+                <constraint firstAttribute="trailing" secondItem="qSR-KE-GUW" secondAttribute="trailing" id="aNO-uC-ji5"/>
+                <constraint firstItem="7H9-q8-Jzc" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-3" id="jE7-1a-Bok"/>
+                <constraint firstItem="qSR-KE-GUW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ujx-13-evR"/>
+            </constraints>
+            <size key="customSize" width="218" height="105"/>
+            <connections>
+                <outlet property="lblLife" destination="7H9-q8-Jzc" id="ntg-3O-Na0"/>
+                <outlet property="viewLife" destination="qSR-KE-GUW" id="on4-se-XXP"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="112.16517857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>
